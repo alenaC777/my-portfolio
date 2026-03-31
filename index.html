@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cybersecurity Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #020617, #0f172a);
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero span {
+    color: #38bdf8;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #94a3b8;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+/* CARD GRID */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+@media(min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CARDS */
+.card {
+    background: #020617;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #1e293b;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+/* LINKS */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #1e293b;
+    margin-top: 40px;
+    color: #94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>A. <span>Your Name</span></h1>
+    <p>Cybersecurity Consultant | Threat Analysis | Risk Management</p>
+    <button onclick="document.getElementById('contact').scrollIntoView()">Contact Me</button>
+</div>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+        Cybersecurity professional with a Bachelor of Science in Cybersecurity,
+        focused on protecting systems, identifying vulnerabilities, and strengthening digital environments.
+        </p>
+
+        <p style="margin-top:10px;">
+        Experienced with Wireshark, Nmap, and Metasploit through hands-on projects
+        in network analysis, vulnerability scanning, and risk assessment.
+        </p>
+
+        <p style="margin-top:10px;">
+        Strong communicator with a passion for writing, making complex technical concepts clear and accessible.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Skills</h2>
+    <div class="card skills">
+        <span>Threat Detection</span>
+        <span>Vulnerability Assessment</span>
+        <span>Risk Management</span>
+        <span>Wireshark</span>
+        <span>Nmap</span>
+        <span>Metasploit</span>
+        <span>Python</span>
+        <span>Linux</span>
+        <span>Windows Security</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Network Traffic Analysis</h3>
+            <p>
+            Analyzed packet captures using Wireshark to detect anomalies and document security findings.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Vulnerability Scanning</h3>
+            <p>
+            Conducted scans with Nmap to identify open ports, weaknesses, and recommend mitigation strategies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Risk Assessment</h3>
+            <p>
+            Evaluated systems for vulnerabilities and developed structured risk mitigation plans.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Penetration Testing Lab</h3>
+            <p>
+            Simulated attacks using Metasploit to understand exploit techniques and system defenses.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+    <h2>Certifications</h2>
+    <div class="card">
+        <p>EC-Council Certified Ethical Hacker (CEH)</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: yourname@email.com</p>
+        <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
+        <p>GitHub: <a href="#">Your GitHub</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 A. Your Name | Cybersecurity Portfolio</p>
+</footer>
+
+</body>
+</html>
